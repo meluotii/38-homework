@@ -12,18 +12,14 @@
 
 .item-image {
     background-color: transparent;
-    width: 1180px;
-    height: 930px;
     perspective: 2000px;
 
     &--size {
-      width: 570px;
-      height: 443px;
+        height: 342px;
     }
 
     &--resize {
-      width: 570px;
-      height: 716px;
+        height: 552px;
     } 
 
     &__inner {
@@ -66,20 +62,21 @@
                 }
 
                 &__title {
-                  font-size: 45px;
+                  font-size: 40px;
                   font-weight: 900;
-
+                  
                   &--font {
-                    font-size: 30px;
+                    font-size: 25px;
+                    padding: 0 13px;
                     padding-bottom: 5px;
                   }
                 }
 
                 &__caption {
-                  font-size: 18px;
+                  font-size: 16px;
 
                   &--font {
-                    font-size: 13px;
+                    font-size: 12px;
                   }
                 }
           }
