@@ -1,0 +1,137 @@
+body {
+  background: #e2e7ec;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+  border: none;
+  color: #000000;
+  font-family: 'HansKendrick', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  font-family: 'HansKendrick', sans-serif;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  color: #545454;
+}
+
+@font-face {
+  font-family: 'HansKendrick', sans-serif;
+  src: url("../fonts/HansKendrick-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  max-width: 1120px;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.block-news {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.block-news__post {
+  background-color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.block-news__post:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.block-news__post:first-child {
+  grid-column: span 2;
+  grid-row: span 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url(../images/01.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%), url(../images/01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block-news__post .image {
+  width: 360px;
+  height: 250px;
+}
+
+.block-news__post .image img {
+  width: 100%;
+}
+
+.block-news__post .info {
+  padding: 25px;
+  word-wrap: break-word;
+}
+
+.block-news__post .info--bg {
+  -webkit-transform: translateY(357px);
+          transform: translateY(357px);
+  padding: 45px;
+}
+
+.block-news__post .info__date {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.5;
+  padding-bottom: 15px;
+}
+
+.block-news__post .info__date--color {
+  color: white;
+}
+
+.block-news__post .info__title {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 70px;
+  line-height: 30px;
+}
+
+.block-news__post .info__title--color {
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+  padding-bottom: 0;
+}
+/*# sourceMappingURL=main.css.map */
