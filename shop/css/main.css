@@ -18,7 +18,7 @@ body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
 
 .grid-header {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -26,6 +26,14 @@ body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
       grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   padding: 50px;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+
+.grid-header img {
+  display: block;
+  width: 100%;
 }
 
 .item-image {
@@ -35,10 +43,12 @@ body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
 }
 
 .item-image--size {
+  width: 440px;
   height: 342px;
 }
 
 .item-image--resize {
+  width: 440px;
   height: 552px;
 }
 
@@ -69,6 +79,7 @@ body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
 
 .item-image__inner .image-front img {
   width: 100%;
+  display: block;
 }
 
 .item-image__inner .image-back {
@@ -146,6 +157,10 @@ body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
 }
 
 .grid-footer img {

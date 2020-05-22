@@ -2,12 +2,18 @@
 
 .grid-header {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     padding: 50px;
+    max-width: min-content;
+
+    img {
+      display: block;
+      width: 100%;
+  }
 }
 
 .item-image {
@@ -15,10 +21,12 @@
     perspective: 2000px;
 
     &--size {
+        width: 440px;
         height: 342px;
     }
 
     &--resize {
+        width: 440px;
         height: 552px;
     } 
 
@@ -41,7 +49,8 @@
 
             img {
               width: 100%;
-         }
+              display: block;
+            }
           }
 
           .image-back {
@@ -109,11 +118,12 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: max-content;
+    margin: 0 auto;
 
     img {
         display: block;
         width: 100%;
-
     }
 
     li {
