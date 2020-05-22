@@ -1,5 +1,5 @@
 # 38-homework
 
-[Design](https://meluotii.github.io/design/index.html)
+[Design](https://meluotii.github.io/38-homework/design/index.html)
 
-[Shop](https://meluotii.github.io/shop/index.html)
+[Shop](https://meluotii.github.io/38-homework/shop/index.html)
